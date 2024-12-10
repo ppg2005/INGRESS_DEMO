@@ -1,0 +1,13 @@
+  487  k create deploy sample-1 --image=devopsprosamples/next-path-sample-1
+  488  k get  deploy sample-1
+  489  k create deploy sample-2 --image=devopsprosamples/next-path-sample-2
+  490  k get deploy sample-2
+  491  k create deploy sample-3 --image=devopsprosamples/next-sample-1
+  492  k create deploy sample-4 --image=devopsprosamples/next-sample-2
+  493  k get deploy  sample-3
+  494  k get deploy  sample-4
+  495  k expose deploy sample-1 --type=ClusterIP --port=3000
+  496  k expose deploy sample-2 --type=ClusterIP --port=3000
+  497  k expose deploy sample-3 --type=ClusterIP --port=3000
+  498  k expose deploy sample-4 --type=ClusterIP --port=3000
+
